@@ -218,3 +218,12 @@ ssh -T git@github.com
 
 然后就会提示你成功了~~
 ```
+# git 放弃本地更改 强制拉取
+未提交同步----操作---打开命令提示符(C)  
+```
+git fetch --all
+git reset --hard origin/master
+git pull
+```
+ git fetch 指令是下载远程仓库最新内容，不做合并  
+ git reset 指令把HEAD指向master最新版本  
