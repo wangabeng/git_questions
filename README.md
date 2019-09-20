@@ -227,3 +227,28 @@ git pull
 ```
  git fetch 指令是下载远程仓库最新内容，不做合并  
  git reset 指令把HEAD指向master最新版本  
+
+# git打标签
+```
+Git Tag
+
+    git tag -a 2.27 -m "release version 201606"
+    git push origin --tags
+    详解：git tag 是命令
+        -a 0.1.3是增加 名为0.1.3的标签
+        -m 后面跟着的是标签的注释    
+
+     打标签的操作发生在我们commit修改到本地仓库之后。完整的例子
+        git add .
+        git commit -m “fixed some bugs”
+        git tag -a 0.1.3 -m “Release version 0.1.3″
+
+    分享提交标签到远程服务器上
+       git push origin master
+       git push origin --tags
+       –tags参数表示提交所有tag至服务器端，普通的git push origin master操作不会推送标签到服务器端。
+
+    删除标签的命令
+        git push origin local_branch:remote_branch
+
+```
