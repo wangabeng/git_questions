@@ -1,4 +1,8 @@
 # git问题汇总
+
+# Git——向GitHub提交代码
+https://www.jianshu.com/p/ad59186b6381
+
 # git的编译安装最新版本方法
 	我购买的阿里云yum安装的git 竟然是很低的版本1.8.1的
 	卸载重新安装步骤 参见https://www.cnblogs.com/oufeng/p/6614042.html
@@ -252,5 +256,4 @@ Git Tag
         git push origin local_branch:remote_branch
 
 ```
-# test添加信息
-Test 添加信息
+# 
